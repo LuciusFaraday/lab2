@@ -1,0 +1,20 @@
+#app
+{
+	float: left;
+	margin-left: 20vw;
+	margin-right: 20vw;
+	padding-left: 20vw;
+	padding-right: 20vw;
+}
+
+#history div
+{
+	min-width: 100%;
+	min-height: 20pt;
+}
+
+#history
+{
+	border-color: black;
+	border: 1px;
+}

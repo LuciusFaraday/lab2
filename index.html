@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="styles.css">
+		<title>Calculator</title>
+	</head>
+	<body>
+		<div id="app">
+			<table id="history">
+				<tr>
+					<td>
+						<div id="third_item"></div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<div id="second_item"></div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<div id="first_item"></div>
+					</td>
+				</tr>
+			</table>
+			<form id="textField" onsubmit="() => {
+				onCalculate();
+				return false;
+			}">
+				<input name="textField">
+			</form>
+			<table>
+				<tr>
+					<td>
+						<button onclick="onAddCharacter(this)">7</button>
+					</td>
+					<td>
+						<button onclick="onAddCharacter(this)">8</button>
+					</td>
+					<td>
+						<button onclick="onAddCharacter(this)">9</button>
+					</td>
+					<td>
+						<button onclick="onAddCharacter(this)">/</button>
+					</td>
+					<td>
+						<button onclick="onClear()">C</button>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<button onclick="onAddCharacter(this)">4</button>
+					</td>
+					<td>
+						<button onclick="onAddCharacter(this)">5</button>
+					</td>
+					<td>
+						<button onclick="onAddCharacter(this)">6</button>
+					</td>
+					<td>
+						<button onclick="onAddCharacter(this)">*</button>
+					</td>
+					<td>
+						<button onclick="onAddCharacter(this)">(</button>
+					</td>
+					<td>
+						<button onclick="onAddCharacter(this)">)</button>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<button onclick="onAddCharacter(this)">1</button>
+					</td>
+					<td>
+						<button onclick="onAddCharacter(this)">2</button>
+					</td>
+					<td>
+						<button onclick="onAddCharacter(this)">3</button>
+					</td>
+					<td>
+						<button onclick="onAddCharacter(this)">-</button>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<button onclick="onAddCharacter(this)">0</button>
+					</td>
+					<td>
+						<button onclick="onAddCharacter(this)">.</button>
+					</td>
+					<td>
+						<button onclick="onAddCharacter(this)">+</button>
+					</td>
+					<td>
+						<button onclick="onCalculate()">=</button>
+					</td>
+				</tr>
+			</table>
+		</div>
+
+		<script src="main.js"></script>
+	</body>
+</html>
